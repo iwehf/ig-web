@@ -21,7 +21,7 @@ class InferenceAPI extends BaseAPI {
 
     getImage(clientId, taskId, imageNum) {
 
-        const imageUrl = v1.getV1BaseURL() + "/inference_tasks/" + clientId + "/" + taskId + "/images/" + imageNum;
+        const imageUrl = v1.getV1BaseURL() + "/inference_tasks/stable_diffusion/" + clientId + "/" + taskId + "/images/" + imageNum;
         return this.getImageAsDataURL(imageUrl)
     }
 
